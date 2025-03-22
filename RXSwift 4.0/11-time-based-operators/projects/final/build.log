@@ -1,0 +1,58 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild build -scheme RxCocoa -workspace RxSwiftPlayground.xcworkspace -sdk iphonesimulator -destination "name=iPhone 8"
+
+User defaults from command line:
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Build settings from command line:
+    SDKROOT = iphonesimulator18.0
+
+2024-10-21 17:48:10.163 xcodebuild[28581:3060807] Writing error result bundle to /var/folders/b6/mdxjlg817wd_d244dd3_fjqr0000gn/T/ResultBundle_2024-21-10_17-48-0010.xcresult
+xcodebuild: error: Unable to find a device matching the provided destination specifier:
+		{ name:iPhone 8 }
+
+	The requested device could not be found because no available devices matched the request.
+
+	Available destinations for the "RxCocoa" scheme:
+		{ platform:macOS, arch:arm64, id:00006000-000424C602D8801E, name:My Mac }
+		{ platform:macOS, arch:x86_64, id:00006000-000424C602D8801E, name:My Mac }
+		{ platform:iOS, arch:arm64, id:00008020-00126D260E42002E, name:iPhone (Konstantin) }
+		{ platform:iOS, arch:arm64, id:00008103-001D450111EA001E, name:Konstantin’s iPad }
+		{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }
+		{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+		{ platform:macOS, name:Any Mac }
+		{ platform:iOS, id:00008020-00126D260E42002E, name:iPhone (Konstantin), error:iPhone (Konstantin) is not connected Xcode will continue when iPhone (Konstantin) is connected and unlocked. }
+		{ platform:iOS Simulator, id:7F99A1BC-E580-440E-8C88-6275D68D85C2, OS:18.0, name:iPad (10th generation) }
+		{ platform:iOS Simulator, id:7F99A1BC-E580-440E-8C88-6275D68D85C2, OS:18.0, name:iPad (10th generation) }
+		{ platform:iOS Simulator, id:223C0771-F76F-47B4-B2A9-F8C7B4ED13FC, OS:18.0, name:iPad Air 11-inch (M2) }
+		{ platform:iOS Simulator, id:223C0771-F76F-47B4-B2A9-F8C7B4ED13FC, OS:18.0, name:iPad Air 11-inch (M2) }
+		{ platform:iOS Simulator, id:5FB9F726-57F5-459B-9FAB-9ACF050F1D92, OS:18.0, name:iPad Air 13-inch (M2) }
+		{ platform:iOS Simulator, id:5FB9F726-57F5-459B-9FAB-9ACF050F1D92, OS:18.0, name:iPad Air 13-inch (M2) }
+		{ platform:iOS Simulator, id:F474209F-DAC2-4EE2-B914-83A259C3386C, OS:18.0, name:iPad Pro 11-inch (M4) }
+		{ platform:iOS Simulator, id:F474209F-DAC2-4EE2-B914-83A259C3386C, OS:18.0, name:iPad Pro 11-inch (M4) }
+		{ platform:iOS Simulator, id:974CEDD6-4B1A-4322-8F3C-3724C43151D4, OS:18.0, name:iPad Pro 13-inch (M4) }
+		{ platform:iOS Simulator, id:974CEDD6-4B1A-4322-8F3C-3724C43151D4, OS:18.0, name:iPad Pro 13-inch (M4) }
+		{ platform:iOS Simulator, id:A0478067-EC24-4470-8FF2-3B442BD06856, OS:18.0, name:iPad mini (6th generation) }
+		{ platform:iOS Simulator, id:A0478067-EC24-4470-8FF2-3B442BD06856, OS:18.0, name:iPad mini (6th generation) }
+		{ platform:iOS Simulator, id:084ECA43-9C92-4672-AFA5-1773807BBD2C, OS:18.0, name:iPhone 15 }
+		{ platform:iOS Simulator, id:084ECA43-9C92-4672-AFA5-1773807BBD2C, OS:18.0, name:iPhone 15 }
+		{ platform:iOS Simulator, id:8D2D8D3F-C905-4727-A1BB-C9D5592D3DE7, OS:18.0, name:iPhone 15 Plus }
+		{ platform:iOS Simulator, id:8D2D8D3F-C905-4727-A1BB-C9D5592D3DE7, OS:18.0, name:iPhone 15 Plus }
+		{ platform:iOS Simulator, id:FC604D4E-2955-40E1-A7CB-98FED58A0515, OS:18.0, name:iPhone 15 Pro }
+		{ platform:iOS Simulator, id:FC604D4E-2955-40E1-A7CB-98FED58A0515, OS:18.0, name:iPhone 15 Pro }
+		{ platform:iOS Simulator, id:2BBC2B38-DA29-4E61-98FF-212B78D91C6A, OS:18.0, name:iPhone 15 Pro Max }
+		{ platform:iOS Simulator, id:2BBC2B38-DA29-4E61-98FF-212B78D91C6A, OS:18.0, name:iPhone 15 Pro Max }
+		{ platform:iOS Simulator, id:BAC680A2-EA24-45B0-9348-102A51A172C3, OS:18.0, name:iPhone 16 }
+		{ platform:iOS Simulator, id:BAC680A2-EA24-45B0-9348-102A51A172C3, OS:18.0, name:iPhone 16 }
+		{ platform:iOS Simulator, id:1D8CF57B-14E5-4D54-AB39-FABD275595EA, OS:18.0, name:iPhone 16 Plus }
+		{ platform:iOS Simulator, id:1D8CF57B-14E5-4D54-AB39-FABD275595EA, OS:18.0, name:iPhone 16 Plus }
+		{ platform:iOS Simulator, id:F2F03DD6-9393-4BB7-A452-87D9D9983B3F, OS:18.0, name:iPhone 16 Pro }
+		{ platform:iOS Simulator, id:F2F03DD6-9393-4BB7-A452-87D9D9983B3F, OS:18.0, name:iPhone 16 Pro }
+		{ platform:iOS Simulator, id:82483F1F-10A5-4F38-8514-A086EED69FF2, OS:18.0, name:iPhone 16 Pro Max }
+		{ platform:iOS Simulator, id:82483F1F-10A5-4F38-8514-A086EED69FF2, OS:18.0, name:iPhone 16 Pro Max }
+		{ platform:iOS Simulator, id:2AEF0211-BDB0-4585-AF3D-D10150DE3E73, OS:18.0, name:iPhone SE (3rd generation) }
+		{ platform:iOS Simulator, id:2AEF0211-BDB0-4585-AF3D-D10150DE3E73, OS:18.0, name:iPhone SE (3rd generation) }
+
+	Ineligible destinations for the "RxCocoa" scheme:
+		{ platform:tvOS, id:dvtdevice-DVTiOSDevicePlaceholder-appletvos:placeholder, name:Any tvOS Device, error:tvOS 18.0 is not installed. To use with Xcode, first download and install the platform }
+		{ platform:watchOS, id:dvtdevice-DVTiOSDevicePlaceholder-watchos:placeholder, name:Any watchOS Device, error:watchOS 11.0 is not installed. To use with Xcode, first download and install the platform }
